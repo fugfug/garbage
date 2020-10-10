@@ -1,0 +1,220 @@
+replace, pad and chunk							-> done
+
+if length > 24
+	truncated to 8 characters from left			 -> done
+		if 0's
+			leading zeros truncated
+		truncated to 2 characters from right
+else
+	if 0's 
+		leading zeros truncated
+	truncate to 2 from right
+	
+*******************************************************************
+discard:
+
+
+if 0's 
+	leading zeros truncated
+truncate to 2 from right
+
+else
+	truncated to 8 characters from left
+	if 0's
+		leading zeros truncated
+	truncate to 2 from right
+	
+	
+*******************************	NOTES AND OTHER GARBAGE FROM "IEColorParsing.java" *************************************
+
+
+	
+	// ---------------------------- NOTES: ------------------------------------
+	
+/*	public void is0(String str) {
+		String[] split = new String[3];
+		int grpLength = str.length()/3;
+		int j = 0;
+		if(str.charAt(0)=='0' && str.charAt(grpLength)=='0' && str.charAt(grpLength*2)=='0') {
+			split[0] = str.substring(j++, grpLength);
+			split[1] = str.substring(grpLength - j, grpLength*2);
+			split[2] = str.substring(grpLength*2);
+		}
+		
+	}
+	*/
+	
+	
+	
+	/*	
+	11/3=3
+	3*3=9
+	9+3=12
+
+	length/3=temp1
+	temp1*3=temp2
+	temp2+3=res 
+	
+	int t = 491;
+	int out = 0;
+	if(t % 3 !=0) {
+		int temp1 = 3368/3;
+		int temp2 = temp1*3;
+		out = temp2+3;
+	} else System.out.println("nope "+t);
+	System.out.print(out);
+	*/
+	
+	
+	
+	//char[] inSplit = in.toCharArray();
+	//char[] inSplit = new char[in.length()+2]; // for ' ' chars
+	
+//	for(int i = 0; i < inSplit.length; i=i+numPerGrp) {
+//			inSplit[0] = in.substring(i, i+numPerGrp) + ' ';
+		//inSplit[1] = in.substring(numPerGrp) + ' ';
+		//inStr.substring(i, i+4).concat(" ");
+		
+//	}
+	
+	
+	/*	//	Split into three equal groups, with each component representing the corresponding
+	//	colour component of an RGB colour:
+	//		RGB (c00c, 0000, 0000)
+
+		String[] inSplit = new String[3]; // [c00c, 0000, 0000]
+		String inStr = "";
+		int numPerGrp = in.length()/3;
+		
+		if(input.length > 3) {
+			inSplit[0] = in.substring(0, numPerGrp-2) ; // -2 to truncate // got rid of +' '
+			inSplit[1] = in.substring(numPerGrp, numPerGrp*2-2) ;// got rid of +' '
+			inSplit[2] = in.substring(numPerGrp*2, in.length()-2);
+		}
+		
+		for(int j = 0; j < 3; j++) { 
+			if(inSplit[j] == null) {
+				inSplit[j] = 0+"";
+			}
+			inStr+= inSplit[j];
+		}
+		System.out.println("spltrncd: "+inStr);*/
+		
+	
+	
+	
+	
+
+	//	for(String s : inSplit) System.out.print(s+" "); // testing
+		
+//		int truncateTo8 = inSplit[0].length()-8;
+//		if(input.length > 3 && inSplit[0].length() > 8) { //only need to know length of 1 group
+//			inSplit[0] = in.substring(truncateTo8, numPerGrp);//truncateTo8+2); // +amtGetRidOf to truncate
+//			inSplit[1] = in.substring(truncateTo8+numPerGrp, (truncateTo8+numPerGrp)*2-2);//(truncateTo8+numPerGrp)+2) ;
+//			inSplit[2] = in.substring(truncateTo8+(numPerGrp*2), truncateTo8+(numPerGrp*2)+2);//in.length()-2);
+			
+//		}
+	
+	
+	
+	/*	 doesnt work for oooofoooofffvofvff or oooofoooofffoovoofvff
+	i < (in.length()/3)-3; i++, j++, k++) {
+		if(in.charAt(i)=='0' && in.charAt(j)=='0' && in.charAt(k)=='0') {
+			inSplit[0] = in.substring(++i, numPerGrp); 
+			inSplit[1] = in.substring(++j, numPerGrp*2);
+			inSplit[2] = in.substring(++k, in.length());
+	*/
+	
+	
+	
+	
+/////////////////////////////////////
+	
+	
+	
+	/*			// if entire string > 24, truncate each group to 8 chars
+	inSplit[0] = in.substring(0, numPerGrp);//truncateTo8+2); // +amtGetRidOf to truncate
+	inSplit[1] = in.substring(numPerGrp, numPerGrp*2);//(truncateTo8+numPerGrp)+2) ;
+	inSplit[2] = in.substring(numPerGrp*2, in.length());//in.length()-2);
+	// truncatd to 8 done 
+*/
+	
+	/*			inSplit[0] = inSplit[0].substring(inSplit[0].length()-8);//truncateTo8+2); // +amtGetRidOf to truncate
+	inSplit[1] = inSplit[1].substring(inSplit[1].length()-8);//(truncateTo8+numPerGrp)+2) ;
+	inSplit[2] = inSplit[2].substring(inSplit[2].length()-1);//in.length()-2);
+*/			
+	
+	/*inSplit[0] = in.substring(0, numPerGrp);//truncateTo8+2); // +amtGetRidOf to truncate
+	inSplit[1] = in.substring((numPerGrp), numPerGrp*2);//(truncateTo8+numPerGrp)+2) ;
+	inSplit[2] = in.substring((numPerGrp*2));//in.length()-2);
+			// doesnt work for ooovoooofvofvff
+	int i = 0, j = numPerGrp, k = (numPerGrp*2);
+	if(in.charAt(0)=='0' && in.charAt(j)=='0' && in.charAt(k)=='0') {
+		for(; 
+				i < (in.length()/3)-2 && j < (in.length()/3)-2 && k < (in.length()/3)-2; ) {
+			if(in.charAt(i)!='0' && in.charAt(j)!='0' && in.charAt(k)!='0') {
+				i++; j++; k++;
+			} else {
+				inSplit[0] = inSplit[0].substring(i, numPerGrp); 
+				inSplit[1] = inSplit[1].substring(j, numPerGrp*2);
+				inSplit[2] = inSplit[2].substring(k, in.length());
+				//i++; j++; k++;
+			}
+		}
+	}
+	*/
+	
+	
+	/*	// doesnt work for ooovFooovFooovF or oooFoooFoooF
+	inSplit[0] = in.substring(0, numPerGrp);//truncateTo8+2); // +amtGetRidOf to truncate
+	inSplit[1] = in.substring((numPerGrp), numPerGrp*2);//(truncateTo8+numPerGrp)+2) ;
+	inSplit[2] = in.substring((numPerGrp*2), in.length());//in.length()-2);
+	if(inSplit[0].charAt(0)== '0' && inSplit[1].charAt(0)=='0' && inSplit[2].charAt(0)=='0') {
+		for(int i = 0, j = 0, k = 0; i <= inSplit[0].length()-2 && j <= inSplit[1].length()-2 && k <= inSplit[2].length()-2; ) {
+			if(inSplit[0].charAt(i)=='0' && inSplit[1].charAt(j)=='0' && inSplit[2].charAt(k)=='0') {
+				i++; j++; k++;
+			} else { 
+				inSplit[0] = inSplit[0].substring(i, inSplit[0].length());
+				inSplit[1] = inSplit[1].substring(j, inSplit[1].length());
+				inSplit[2] = inSplit[2].substring(k, inSplit[2].length());
+			}
+			
+		}
+	}*/
+	
+	/*
+// doesnt work for ooovoooofvofvff
+	if(in.charAt(0)=='0' && in.charAt(numPerGrp)=='0' && in.charAt(numPerGrp*2)=='0') {
+		for(int i = 0, j = numPerGrp, k = (numPerGrp*2); 
+				i < (in.length()/3); ) {
+			if(in.charAt(i++)=='0' && in.charAt(j++)=='0' && in.charAt(k++)=='0') {
+				inSplit[0] = in.substring(i, numPerGrp); 
+				inSplit[1] = in.substring(j, numPerGrp*2);
+				inSplit[2] = in.substring(k, in.length());
+			}
+		}
+	}	*/
+	
+	
+	//			inSplit[0] = in.substring(0, numPerGrp);//truncateTo8+2); // +amtGetRidOf to truncate
+	//		inSplit[1] = in.substring((numPerGrp), numPerGrp*2);//(truncateTo8+numPerGrp)+2) ;
+		//	inSplit[2] = in.substring((numPerGrp*2), in.length());//in.length()-2);
+			//if(inSplit[0].charAt(0)== '0' && inSplit[1].charAt(0)=='0' && inSplit[2].charAt(0)=='0') {
+/*				for(int i = 0, j = 0, k= 0; i < inSplit[0].length() ; i++) {
+					while(inSplit[0].charAt(i)=='0' && inSplit[1].charAt(i)=='0' && inSplit[2].charAt(i)=='0' &&  i < inSplit[0].length()) { // while -> if
+						//j++; k++;
+						//++i; ++j; ++k;
+						i++; 
+					}// else {
+						inSplit[0] = inSplit[0].substring(i);
+						inSplit[1] = inSplit[1].substring(i);
+						inSplit[2] = inSplit[2].substring(i);
+					//}
+					
+				}
+			//}
+	*/	
+	
+	
+	
+	
