@@ -1,0 +1,476 @@
+		// Gwp?MpnkuffwfuzX!nmB&&mbke&ngugjvTowymcv7!sohrrm
+		// Gwp?zYgtHvaazavyjva5*luPpyuhwj&jXcgeqagjmnpjmmr // first
+		// GwVzifheazz!zapdazeepvh*eF!crctjuerjxTvQjk*dTvd
+		// Gwp?z*oyp7!rirdRmikfXrvxYgmtfqcqe!gic!kqprkqqt 
+		// Gwp?z*oyppqpyf&yp0?!!?5*bxlmyfydabsfayExyqn6!rm
+
+
+no longer in use:
+
+// else if(!(new String(tempIn).contains(encryptedSplit.get(j).toLowerCase().charAt(k+1)+""))) {
+						//decrypted+=outer[z];
+					//}
+
+if(Pattern.matches("\\W", shiftedInner[0]+"")) { // https://www.javatpoint.com/java-regex
+				output += (rand.nextInt(10) + ""+shiftedInner[0]); // if new index is nonalphabetic use rand# to indicate upcoming shift
+	} else 
+			output += (shiftedInner[0]+"").toUpperCase(); 
+
+
+	/*		for(int i = 0; i < fuckfuck.size(); i++) {
+			fillMap(shiftInnerDisk(in, d.toLowerCase().charAt(fuckfuck.get(i))));
+			System.out.println(map);
+		}*/
+		//String tempD = "";
+		//fuckfuckS.add(d.substring(fuckfuck.get(0), fuckfuck.get(1)));
+		
+		/*			
+			String tempD = d.substring(fuckfuck.get(i-1), fuckfuck.get(i));
+			char[] tempIn = shiftInnerDisk(in, tempD.toLowerCase().charAt(fuckfuck.get(i-1)));
+			for(int j = 0; j < d.length(); j++) {
+				//int h = new String(tempIn).indexOf(tempD.charAt(j))+1; 
+				//decrypted += outer[h];
+			}
+			tempD += d.substring(i-1) + " ";
+			*/
+			
+				
+		
+/*		// https://stackoverflow.com/questions/1383797/java-hashmap-how-to-get-key-from-value
+		for(int i = 1; i < d.length(); i++) {	
+			for (Entry<Character, Character> entry : map.entrySet()) {
+				if (entry.getValue()==d.charAt(i)) {
+						if(Pattern.matches("[A-Z]", d.charAt(i)+"")) {
+							fillMap(shiftInnerDisk(in, d.toLowerCase().charAt(fuckfuck.get(i))));
+						} else if (Pattern.matches("\\d", d.charAt(i)+"")) {
+							fillMap(shiftInnerDisk(in, d.toLowerCase().charAt(fuckfuck.get(i+1))));
+						}
+					decrypted += entry.getKey() ;
+				} 
+			}
+		}*/
+		
+		
+/*		
+		for(int i = 0; i < d.length(); i++) {
+			for(int j = 0; j < ex.length(); j++) {
+				if(d.charAt(i) == ex.charAt(j)) {
+					fillMap(shiftInnerDisk(d.toCharArray(), i)); 
+					
+					//System.out.println(map);
+					for (Entry<Character, Character> entry : map.entrySet()) {
+						if (entry.getValue().equals(d.charAt(i))) {
+							//fillMap(shiftInnerDisk(d.toCharArray(), i)); 
+							decrypted += entry.getKey();
+						}
+						
+					}
+				}
+			}
+		}*/
+		
+/*		
+		for(int i = 1; i < d.length(); i++) {
+			//for(int j = 0; j < ex.length(); j++) {
+				if(Pattern.matches("[A-Z]", d.charAt(i)+"")) {
+					fillMap(shiftInnerDisk(d.toCharArray(), i)); 
+					System.out.println(map);
+				}
+				if(Pattern.matches("\\d", d.charAt(i)+"")) { 
+					fillMap(shiftInnerDisk(d.toCharArray(), i+1)); 
+					System.out.println(map);
+				}
+			//}
+			
+			
+		for (Entry<Character, Character> entry : map.entrySet()) {
+				if (entry.getValue()==d.charAt(i)) {
+					decrypted += entry.getKey();		
+				}
+			}
+			
+			
+		}*/
+		
+/*		
+		for (Entry<Character, Character> entry : map.entrySet()) {
+			for(int i = 0; i < d.length(); i++) {
+				if(Pattern.matches("[A-Z]", d.charAt(i)+"")) {
+					if (entry.getValue()==d.charAt(i)) 
+						fillMap(shiftInnerDisk(d.toCharArray(), i)); 
+				System.out.println(map);
+				decrypted += entry.getKey();
+				}
+				
+				if(Pattern.matches("\\d", d.charAt(i)+"")) { // 0-9
+					if (entry.getValue()==d.charAt(i)) 
+						fillMap(shiftInnerDisk(d.toCharArray(), i+1)); 
+					System.out.println(map);
+					decrypted += entry.getKey();
+				}
+				
+				
+				
+			}
+		}
+		*/
+		
+/*	*/	
+		
+		
+	/*	ArrayList<Integer> fuckfuck = new ArrayList<>();
+		for(int i = 0; i < d.length(); i++) {
+			if(Pattern.matches("[A-Z]", d.charAt(i)+"")) {
+				fuckfuck.add(i);
+			} else if (Pattern.matches("\\d", d.charAt(i)+"")) {
+				fuckfuck.add(i+1);
+			}
+		}
+		System.out.println(fuckfuck); // check
+		
+	/*	Optional<Character> values = map.entrySet().stream()
+				  .filter(e -> e.getValue().equals(d.charAt(fuckfuck.get(0))))
+				  .map(Map.Entry::getKey).findFirst();*/
+		
+	/*	for(int k = 0; k < fuckfuck.size(); k++) {
+			//for(int p = 0; p < in.length; p++) {
+			
+				for(int j= 0; j < d.length(); j++) {
+					int p = 0;
+					while(p<in.length) {
+						if(!movable.contains(d.charAt(fuckfuck.get(k))+"")) {
+							p++;
+						} else {
+							fillMap(shiftInnerDisk(in, p ));
+							System.out.println(map);
+							p++;
+						}
+					}
+				}
+			//}
+		}*/
+		
+	/*	for(int j = 0; j < fuckfuck.size(); j++) {	
+			//int k=0;
+			for(int k=0; k < movable.length();k++) {
+				//if(d.charAt(fuckfuck.get(j)) == in[k]) {
+				if(d.charAt(fuckfuck.get(j)) == movable.charAt(k)) {
+					//movable.
+					fillMap(shiftInnerDisk(in, k));
+					System.out.println(map);
+				} 
+				//k++;
+			}
+		}
+		//movable.chars().*/
+		
+		
+		
+		
+		
+		
+		
+		
+
+
+
+
+
+/*
+ for k < shiftfreq
+ 	generate new index / shifted -> shiftInnerDisk(shifted)
+ 
+ substring shifts[1]
+
+substring output.charat.1+(shifts[2]-shifts[1]), output.charat.2
+substring output.charat.1+(shifts[3]-shifts[2]), output.charat.3
+ 
+ */
+
+/*		for(int j = 0; j < input.length(); j++) {	// works. basic - no shifts
+output += map.get(input.charAt(j)); 
+}
+System.out.println(output);*/
+//System.out.println(shiftFrequency); // testing
+
+
+/*		
+ //	public static char[] shiftInnerDisk(char[] out, char[] in, String input) {
+ char[] shiftedInner = new char[in.length];
+ shiftedInner[0] = in[shift];
+// g!lnprtujkvw?*z&xysomqihfdbace
+for(int i = 1; i < in.length - shift; i++) {
+	shiftedInner[i] = in[shift+1];
+	shift++;
+}
+for(int j = in.length - shift; j < in.length; j++) {
+	shiftedInner[j] = in[j];
+	//shift++;
+}
+
+
+for(int i = 0; i < in.length - shift; i++) {
+	for(int j = shift; j < in.length; j++) {
+		shiftedInner[j] = in[shift];
+		shift++;
+		
+	}
+	//shiftedInner[j] = in[i];
+}
+
+	//	for(char c : shiftedInner)
+		//	System.out.print(c + " ");
+		//return shiftedInner;
+*/
+
+
+
+
+
+/*	for(int k = 0; k < input.length(); k++) {
+	for(int j = shift; j < in.length; j++) {
+		shiftedInnerArray[k] = in[j];
+	}
+	for(int i = 0; i < shift; i++) {
+		shiftedInnerArray[k] = in[i];
+	}
+}
+
+for(int l = 0; l < shiftedInnerArray.length; l++) {
+	shiftedInner+=shiftedInnerArray[l];
+}
+
+
+if(shift <= in.length) {
+	for(int j = shift; j < in.length; j++) {
+		shiftedInner += in[j];				
+	}
+	for(int i = 0; i < shift; i++) {
+		shiftedInner += in[i];
+	}
+} else {
+	for(int j = shift; j < in.length; j++) {
+		shiftedInner += in[j];				
+	}
+	for(int i = 0; i < shift; i++) {
+		shiftedInner += in[i];
+	}
+}
+*/
+
+
+
+// shifts	[1, 8, 10]
+// first 1 chars -> output2, 
+
+/*		//String output2 = "";
+if(shifts.size() > 1) {
+	for(int i = 0; i < output.length(); i++) {
+		//while(output.charAt(i) != )
+	}
+}*/
+
+/*	String output2 = "";
+for(int j = 0; j < shifts.size(); j++) {
+	for(int i = 0; i < output.length(); i++) {
+		output2+=output.charAt(i);
+		if(i == shifts.get(j)) {
+			output2+=output;
+			output.substring(i+1, j-1);
+		}
+	}
+}*/
+
+/*		String output2 = "";
+for(int i = 0; i < output.length(); i++) {
+	output2 += output.charAt(i);
+	for(int j = 0; j < ex.length(); j++) {
+		if(output.charAt(i) == ex.charAt(j)) {
+			output.substring(i, i+1);
+		}
+	}
+}
+*/
+
+/*	
+String output2 = "";
+
+int i = 0; int j = 1;
+if(shifts.size() > 1) {
+	for(; i < output.length() ; i++) {
+		output2 += output.charAt(i);
+		if(i < shifts.size()-1) {
+			if(i == shifts.get(j)) {
+				output2 += output.charAt(i);
+				
+				j++;
+			}
+		}
+	}
+}
+*/	
+
+/*		String output2 = "";
+
+int i = 0; int j = 1;
+if(shifts.size() > 1) {
+	
+	
+	while(j < shifts.size()) {
+		for(; i < shifts.get(j)+1; i++) {
+			output2 += output.charAt(i);
+			if(i == shifts.get(j)) {
+				i+=shifts.get(j);
+				output2 += output.charAt(i);
+			}
+		}
+		j++;
+	}
+	
+	
+}*/
+
+
+/**/	/*	int i = 0; int j = 0; 
+String output2 = "";
+//for(; i < output.length(); i++) {
+//for(; i < shifts.size(); i++) {	
+	while(j < shifts.size()) {
+		output2 = output.substring(0, shifts.get(j)+1);
+		j++;
+		i++;
+	//}
+}
+
+*/
+
+/* encrypt: only 1 shift
+for(int j = 0; j < input.length(); j++) {	// works only shifts once
+if(j == shiftInnerAtThisIndex) {
+	shiftedInner = shiftInnerDisk(out, in, shiftInnerAtThisIndex).toCharArray();
+	fillMap(out, shiftedInner);
+	if(Pattern.matches("\\W", shiftedInner[0]+"")) {
+		// thanks: https://www.javatpoint.com/java-regex
+		output += (shiftedInner[0]+""+shiftedInner[0]);
+	} else output += (shiftedInner[0]+"").toUpperCase();
+	output += map.get(input.charAt(j)); 
+}else
+	output += map.get(input.charAt(j)); 
+}*/	
+
+
+
+
+
+
+/* 	substring shifts[1] g-b
+	f.1, f.1+shifts[2]-shifts[1] B - L
+	f.2, f.2+shifts[3]-shifts[2] l-y
+	f.3, f.3+shifts[4]+shifts[3]
+	f.4, output.length-1
+ */
+
+
+//output2+=output.substring(fuck[1]-1, fuck[1]+(shifts.get(2) - shifts.get(1))+1); // -2 to get the char before a # b/c char before # is the index - # is not the index
+//output2+=output.substring(fuck[2]-1, fuck[2]+(shifts.get(3) - shifts.get(2))+1);
+/*	*/	
+//String output2 = "";
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+alberti.txt
+
+encrypt/decrypt?
+...
+
+encrypt
+default inner, random generated inner, or enter your own?
+...
+outer
+inner
+encrypt:...
+
+results
+
+derypt
+enter inner
+
+Gwp? z*oypGpqpExhzxnsshe? lstnvnw*? Wxidn&Gysippo
+
+
+
+
+Gwp?z*oyp7!rirdRmikfXrvxYgmtfqcqe!gic!kqprkqqt
+ABCDEFGHIJKLMNOPQRSTUVWXYZ1234
+g!lnprtujkvw?*z&xysomqihfdbace
+
+w?*z&xysomqihfdbaceg!lnprtujkv
+
+
+
+
+out:  ABCDEFGHIJKLMNOPQRSTUVWXYZ1234
+in:   g!lnprtujkvw?*z&xysomqihfdbace
+
+       LEMOAGK22O2KRIK2NCHERHXLIPI3A4V2AIUDEIUUF
+d:    Gwp?zYgtHvaazavyjva5*luPpyuhwj&jXcgeqagjmnpjmmr
+       
+GYH(5)*PX
+
+
+
+d:  	  	Gwp?zYgtHvaazavyjva5*luPpyuhwj&jXcgeqagjmnpjmmr
+out:    	ABCDEFGHIJKLMNOPQRSTUVWXYZ1234
+tempIn[1]:      g!lnprtujkvw?*z&xysomqihfdbace
+[0, 5, 8, 20, 23, 32]
+GYH*PX
+
+Arrays.toString(in)
+i = 1, i <= fuckfuck.size
+	d.substring.i-1, i
+	char[] temp = shiftInnerDisk(in, d.toLowerCase().charAt(fuckfuck.get(i-1)));
+	j = 0, j < d length
+		int h = in.indexof.d.charat.j
+		decrypted += outer.h
+
+
+
+
+d.charat.i == ex.j
+	int shift = d.charat.i //?
+	fillMap(out, shiftInnderDisk(in, shift))
+
+	for (Entry<Character, Character> entry : map.entrySet()) {
+            if (entry.getValue().equals(d.charat.i)) {
+                System.out.println(entry.getKey());
+            }
+        }
+
+map.key.j
+
+
+
+if string.i == ex.j
+map get key
+fillmap(out, shiftinnerdisk(in, ))
+
+
+
+
+***************************************************************
+
+substring shifts[1]+1
+
+fuck[1], f.1+output[shifts.2-shifts1]
+
+
+
+
+
+f.1, f.1+shifts[2]-shifts[1] B - L
+f.2, f.2+shifts[3]-shifts[2] l-y
+f.3, f.3+shifts[4]+shifts[3]
+f.4, output.length-1
